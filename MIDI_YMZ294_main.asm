@@ -907,22 +907,22 @@ YMZ_SETTINGS;mikansei
     movwf YMZ_DATA
     call SET_YMZ_REG
     
-    ;vol CH-A zero
-    movlw B'00001000';08(CH-A)
+    ;vol Lane-A zero
+    movlw B'00001000';08(Lane-A)
     movwf YMZ_ADDRESS
     movlw B'00000000'
     movwf YMZ_DATA
     call SET_YMZ_REG
     
-    ;vol CH-B zero
-    movlw B'00001001';09(CH_B)
+    ;vol Lane_B zero
+    movlw B'00001001';09(Lane_B)
     movwf YMZ_ADDRESS
     movlw B'00000000'
     movwf YMZ_DATA
     call SET_YMZ_REG
     
-    ;vol CH-C zero
-    movlw B'00001001';10(CH_C)
+    ;vol Lane_C zero
+    movlw B'00001010';0x0A(Lane_C)
     movwf YMZ_ADDRESS
     movlw B'00000000'
     movwf YMZ_DATA
